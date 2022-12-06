@@ -1,2 +1,5 @@
 aula02-stubs/node_modules
 aula03-spies/node_modules
+aula04-coverage-e2e/node_modules
+aula04-coverage-e2e/.nyc_output
+aula04-coverage-e2e/coverage
