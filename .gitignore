@@ -1,0 +1,14 @@
+modulo01/aula02-stubs/node_modules
+modulo01/aula03-spies/node_modules
+modulo01/aula04-coverage-e2e/node_modules
+modulo01/aula04-coverage-e2e/.nyc_output
+modulo01/aula04-coverage-e2e/coverage
+modulo01/aula05-tdd-project-pt01/node_modules
+modulo01/aula05-tdd-project-pt02/node_modules
+modulo01/aula05-tdd-project-pt02/coverage
+modulo01/aula05-tdd-project-pt02/.nyc_output
+modulo01/aula05-tdd-project-pt03/node_modules
+modulo01/aula05-tdd-project-pt03/coverage
+modulo01/aula05-tdd-project-pt03/.nyc_output
+modulo03/demo02-esmodules-internacionalization/node_modules
+
