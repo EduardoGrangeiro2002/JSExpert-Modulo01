@@ -1,6 +1,7 @@
 import Person from './person.js'
 import database from "./../database.json" assert { type: 'json'}
 import TerminalController from './terminalController.js'
+import { save } from './repository.js'
 
 const DEFAULT_LANG = 'pt-BR'
 const STOP_TERM = ':q'
@@ -9,7 +10,7 @@ terminalController.initializeTerminal(database, DEFAULT_LANG)
 
 async function mainLoop() {
     try {
-        const answer = await terminalController.question('What??\n')
+        const answer = await terminalController.question()
 
         if(answer === STOP_TERM) {
             terminalController.closeTerminal()
@@ -17,7 +18,8 @@ async function mainLoop() {
             return;
         }
         const person = Person.generateInstanceFromString(answer)
-        console.log('person', person.formatted(DEFAULT_LANG))
+        save(person)
+        terminalController.updateTable(person.formatted(DEFAULT_LANG))
         return mainLoop()
     } catch (error) {
         console.error('DEU RUIM**', error)
