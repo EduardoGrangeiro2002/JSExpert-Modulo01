@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "vehicles": [
+            "Motorcycle",
+            "Car",
+            "Truck"
+        ],
+        "kmTraveled": 1000,
+        "from": "2009-01-01",
+        "to": "2020-11-26"
+    },
+    {
+        "id": "2",
+        "vehicles": [
+            "AudiA1",
+            "BMW",
+            "AudiA3"
+        ],
+        "kmTraveled": "2000",
+        "from": "2013-01-02",
+        "to": "2014-01-03"
+    },
+    {
+        "id": "3",
+        "vehicles": [
+            "MiniCooper"
+        ],
+        "kmTraveled": "70000",
+        "from": "2015-01-02",
+        "to": "2017-01-03"
+    }
+]
