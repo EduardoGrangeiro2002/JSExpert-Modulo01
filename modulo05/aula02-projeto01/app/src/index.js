@@ -1,6 +1,6 @@
 'use strict';
 
-const { readFile } = require('fs/promises')
+const { readFile, writeFile } = require('fs/promises')
 const { join } = require('path')
 const pdf = require('pdf-parse')
 const TextProcessorFacade = require('./textProcessorFacade')
@@ -10,5 +10,5 @@ const TextProcessorFacade = require('./textProcessorFacade')
     const data = await pdf(dataBuffer)
     const instance = new TextProcessorFacade(data.text)
     const people = instance.getPeopleFromPDF()
-    console.log('people', people)
+    await writeFile(join(__dirname, './../../jsons/persons.json'), JSON.stringify(people))
 })()
