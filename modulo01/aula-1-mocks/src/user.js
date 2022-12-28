@@ -6,5 +6,5 @@ class User {
         this.birthDay = new Date().getFullYear() - age
     }
 }
-// Testando NeoVim
+
 module.exports = User
