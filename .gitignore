@@ -21,6 +21,7 @@ modulo05/aula02-projeto01/app/.reify-cache
 modulo06/creational/aula02-abstract-factory/node_modules
 modulo06/creational/aula03-test-data-builder-object-mother/node_modules
 modulo07/behavioral/01.strategy/
-modulo07/behavioral/02.observer/node_modules
+modulo07/behavioral/02.observer/node_modules 
 modulo07/behavioral/03.template-method/node_modules
 modulo07/structural/04-decorator-middleware/node_modules
+modulo07/structural/05-adapter/node_modules
