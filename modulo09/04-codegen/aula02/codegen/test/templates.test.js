@@ -11,8 +11,12 @@ import {
     serviceTemplateMock,
     factoryTemplateMock
 } from './mocks'
-import { factoryTemplate, repositoryTemplate, serviceTemplate } from '../src/templates/index.js'
-
+import templates from '../src/templates/index.js'
+const {
+    repositoryTemplate,
+    serviceTemplate,
+    factoryTemplate
+} = templates
 describe('#Codegen 3-layers arch', () => {
     const componentName = 'product'
     const repositoryName = `${componentName}Repository`
